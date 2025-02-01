@@ -8,7 +8,7 @@ export default function App() {
   const memoizedFetch = useMemo(
     () => {
       return () => {
-        fetch('http://localhost:5000/')
+        fetch('https://rag-based-ai-voice-assistant.onrender.com/')
           .then(response => response.text())
           .then(data => console.log(data));
       }

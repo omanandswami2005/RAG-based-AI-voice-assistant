@@ -56,7 +56,7 @@ export default function SpeechToText() {
   // Optional: Function to send the transcript to the server
   const sendTranscriptToServer = async (finalTranscript) => {
     try {
-      const response = await fetch('http://localhost:5000/process-transcript', {
+      const response = await fetch('https://rag-based-ai-voice-assistant.onrender.com/process-transcript', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
