@@ -10,7 +10,7 @@ const app = express();
 const port = 5000;
 
 // Middleware
-app.use(cors()); // To allow cross-origin requests from your frontend
+app.use(cors({ origin: "https://omiiisaivoiceassistant.onrender.com" }));
 app.use(bodyParser.json()); // Parse JSON request bodies
 
 // Langflow configuration
